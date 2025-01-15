@@ -64,10 +64,7 @@ export default function LanguageSystem() {
     }, [isLoggedIn])
 
     const login = () => {
-        console.log('Expected Username:', process.env.NEXT_PUBLIC_ADMIN_USERNAME);
-        console.log('Expected Password:', process.env.NEXT_PUBLIC_ADMIN_PASSWORD);
-
-        if (username === process.env.NEXT_PUBLIC_ADMIN_USERNAME && password === process.env.NEXT_PUBLIC_ADMIN_PASSWORD) {
+        if (username === process.env.ADMIN_USERNAM && password === process.env.ADMIN_USERNAM) {
             setIsLoggedIn(true);
         } else {
             alert('Invalid credentials');
