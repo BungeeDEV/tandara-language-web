@@ -191,35 +191,35 @@ export default function LanguageSystem() {
         setIsImportDialogOpen(false)
     }
 
-    if (!isLoggedIn) {
-        return (
-            <div className="flex items-center justify-center min-h-screen ">
-                <Card className="w-[350px]">
-                    <CardHeader className="space-y-1">
-                        <div className="flex justify-center items-center py-6">
-                            <Logo/>
-                        </div>
-                        <CardTitle className="text-2xl">Login</CardTitle>
-                        <CardDescription>Enter your credentials to access the Language System</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                        <div className="grid w-full items-center gap-4">
-                            <div className="flex flex-col space-y-1.5">
-                                <Label htmlFor="username">Username</Label>
-                                <Input id="username" value={username} onChange={(e) => setUsername(e.target.value)}/>
-                            </div>
-                            <div className="flex flex-col space-y-1.5">
-                                <Label htmlFor="password">Password</Label>
-                                <Input id="password" type="password" value={password}
-                                       onChange={(e) => setPassword(e.target.value)}/>
-                            </div>
-                            <Button onClick={login}>Login</Button>
-                        </div>
-                    </CardContent>
-                </Card>
-            </div>
-        )
-    }
+    // if (!isLoggedIn) {
+    //     return (
+    //         <div className="flex items-center justify-center min-h-screen ">
+    //             <Card className="w-[350px]">
+    //                 <CardHeader className="space-y-1">
+    //                     <div className="flex justify-center items-center py-6">
+    //                         <Logo/>
+    //                     </div>
+    //                     <CardTitle className="text-2xl">Login</CardTitle>
+    //                     <CardDescription>Enter your credentials to access the Language System</CardDescription>
+    //                 </CardHeader>
+    //                 <CardContent>
+    //                     <div className="grid w-full items-center gap-4">
+    //                         <div className="flex flex-col space-y-1.5">
+    //                             <Label htmlFor="username">Username</Label>
+    //                             <Input id="username" value={username} onChange={(e) => setUsername(e.target.value)}/>
+    //                         </div>
+    //                         <div className="flex flex-col space-y-1.5">
+    //                             <Label htmlFor="password">Password</Label>
+    //                             <Input id="password" type="password" value={password}
+    //                                    onChange={(e) => setPassword(e.target.value)}/>
+    //                         </div>
+    //                         <Button onClick={login}>Login</Button>
+    //                     </div>
+    //                 </CardContent>
+    //             </Card>
+    //         </div>
+    //     )
+    // }
 
     return (
         <div className="container mx-auto p-4">
